@@ -1,0 +1,148 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.header{
+    height:70px;
+    width:100%;
+
+    background:white;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:0 30px;
+
+    border-bottom:1px solid #E2E8F0;
+    z-index:1000;
+}
+
+.search{
+    position:relative;
+    flex:1;
+    max-width:650px;
+    padding: 20px;
+}
+
+.search i{
+    position:absolute;
+    left:20px;
+    top:50%;
+    transform:translateY(-50%);
+    color:#64748B;
+    font-size:14px;
+}
+
+.input{
+    width:100%;
+    height:44px;
+
+    padding-left:42px;
+
+    border:1px solid #CBD5E1;
+    border-radius:12px;
+
+    background:#F8FAFC;
+
+    outline:none;
+    transition:0.3s;
+}
+
+.input:focus{
+    border-color:#7C3AED;
+    box-shadow:0 0 0 3px rgba(124,58,237,0.15);
+}
+
+.right{
+    margin-left:30px;
+}
+
+.right ul{
+    display:flex;
+    align-items:center;
+    gap:25px;
+    list-style:none;
+}
+
+.right ul li a{
+    text-decoration:none;
+    color:white;
+
+    display:flex;
+    align-items:center;
+    gap:8px;
+
+    font-weight:500;
+    transition:0.3s;
+}.bell-wrapper i{
+    color: goldenrod;
+}.logout i{
+    color:chocolate;
+}
+
+.right ul li a:hover{
+    color:#7C3AED;
+}.bell-wrapper {
+  position: relative;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.badge {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: red;
+  color: white;
+  font-size: 11px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}/* BASE STYLE */
+.header-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ICON */
+.book-icon {
+  font-size: 22px;
+  background: #eef2ff;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+/* TEXT */
+.header-brand .text h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.header-brand .text span {
+  font-size: 11px;
+  color: #64748b;
+}
+
+/* 🌙 DARK MODE */
+body.dark .header-brand .text h3 {
+  color: #f1f5f9;
+}
+
+body.dark .header-brand .text span {
+  color: #94a3b8;
+}
+
+body.dark .book-icon {
+  background: #1e293b;
+  color: #f1f5f9;
+}

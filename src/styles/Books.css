@@ -1,0 +1,241 @@
+/* =======================
+   THEME VARIABLES
+======================= */
+
+:root {
+  --bg: #ffffff;
+  --text: #111827;
+  --card: #ffffff;
+  --border: #e5e7eb;
+  --primary: #4f46e5;
+  --secondary: #f3f4f6;
+}
+
+/* 🌙 DARK MODE */
+.dark {
+  --bg: #0f172a;
+  --text: #f1f5f9;
+  --card: #1e293b;
+  --border: #334155;
+  --primary: #6366f1;
+  --secondary: #1e293b;
+}
+
+/* =======================
+   MAIN BOOKS PAGE
+======================= */
+
+.books-page {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  height: calc(100vh - 70px);
+  overflow-y: auto;
+}
+
+.front {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.btn {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* =======================
+   SEARCH
+======================= */
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input {
+  padding: 20px;
+  width: 250px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--card);
+  color: var(--text);
+  margin-right: 10px;
+}
+
+/* =======================
+   TABLE DESIGN
+======================= */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--card);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+.firstrow {
+  background: var(--secondary);
+}
+
+/* =======================
+   BOOK UI
+======================= */
+
+.book-cover {
+  width: 40px;
+  height: 55px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.book-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* =======================
+   CATEGORY
+======================= */
+
+.category {
+  background: rgba(99, 102, 241, 0.15);
+  color: var(--primary);
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+/* =======================
+   STATUS
+======================= */
+
+.Available {
+  background: rgba(34, 197, 94, 0.15);
+  color: #22c55e;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.Issued {
+  background: rgba(239, 68, 68, 0.15);
+  color: #ef4444;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+/* =======================
+   DELETE BUTTON
+======================= */
+
+.delete {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* =======================
+   POPUP OVERLAY
+======================= */
+
+.form-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* =======================
+   FORM BOX
+======================= */
+
+.form-box {
+  background: var(--card);
+  color: var(--text);
+  padding: 25px;
+  border-radius: 12px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  animation: pop 0.25s ease-in-out;
+}
+
+@keyframes pop {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Inputs */
+.form-box input {
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  outline: none;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.form-box input:focus {
+  border-color: var(--primary);
+}
+
+/* Buttons */
+.form-box button {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.form-box button:first-of-type {
+  background: var(--primary);
+  color: white;
+}
+
+.form-box button:last-of-type {
+  background: var(--secondary);
+  color: var(--text);
+}.books-page {
+  padding: 25px;
+  margin-top: 0;
+}

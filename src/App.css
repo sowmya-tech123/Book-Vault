@@ -1,0 +1,28 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#F8FAFC;
+    font-family:'Segoe UI',sans-serif;
+}
+
+.container{
+    display:flex;
+    min-height:100vh;
+}
+
+.main-content{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    height: 100vh;
+     background:#F8FAFC;
+    overflow-x:hidden;
+}
+
+.dashboard{
+    padding:25px;
+}
