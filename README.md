@@ -1,16 +1,53 @@
-# React + Vite
+# 📚 Book Vault
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Recently, I started focusing more on backend development and wanted to strengthen my understanding of how frontend, backend, and databases work together. To apply the concepts I learned, I built **Book Vault**, a full-stack library management system.
 
-Currently, two official plugins are available:
+This project helped me gain practical experience with CRUD operations, API development, database integration, and state management. Instead of only learning concepts theoretically, I implemented them in a real project where users can manage books, track transactions, and view library statistics.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+* Add new books to the library
+* View and search books
+* Delete books from the collection
+* Track book-related transactions
+* Notification system for library activities
+* Dashboard with library statistics
+* Dark mode support
+* Book cover image management
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+### Frontend
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* React.js
+* CSS
+* Axios
+* React Router
+
+### Backend
+
+* Node.js
+* Express.js
+
+### Database
+
+* MongoDB Atlas
+* Mongoose
+
+## 🚀 What I Learned
+
+* Building REST APIs with Express.js
+* Connecting applications with MongoDB Atlas
+* Implementing CRUD operations
+* Managing data flow between frontend and backend
+* Working with React components and state
+* Using Git and GitHub for version control
+* Structuring a full-stack application
+
+## 🎯 Project Goal
+
+The main goal of this project was to move beyond tutorials and apply backend concepts in a practical application. Through Book Vault, I gained hands-on experience in building and connecting all parts of a full-stack web application.
+
+## 👨‍💻 Author
+
+Sowmya S
