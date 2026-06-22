@@ -9,6 +9,7 @@ import deepWork from "../assets/books/deep-work.jpeg";
 import theAlchemist from "../assets/books/the-alchemist.jpeg";
 import richDadPoorDad from "../assets/books/rich-dad-poor-dad.jpeg";
 import harryPotter from "../assets/books/harry-potter.jpeg";
+const API_URL = "https://book-vault-1-fel0.onrender.com";
 function Books() {
   const [books, setBooks] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
@@ -33,7 +34,7 @@ const { increaseNotification } = useContext(NotificationContext);
   // GET BOOKS
   const fetchBooks = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/books");
+      const res = await axios.get(`${API_URL}/books`);
       setBooks(res.data);
     } catch (err) {
       console.log(err);
@@ -47,7 +48,7 @@ const { increaseNotification } = useContext(NotificationContext);
   // ADD BOOK
   const addBook = async () => {
     try {
-      const res = await axios.post("http://localhost:5000/books", {
+      const res = await axios.post(`${API_URL}/books`, {
         title: form.title,
         author: form.author,
         category: form.category,
@@ -66,7 +67,8 @@ const { increaseNotification } = useContext(NotificationContext);
   // DELETE BOOK
   const deleteBook = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/books/${id}`);
+      await axios.delete(`${API_URL}/books/${id}`);
+
       setBooks(books.filter((b) => b._id !== id));
       increaseNotification();
     } catch (err) {
