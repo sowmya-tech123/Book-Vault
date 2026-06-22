@@ -7,7 +7,7 @@ function Transactions() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/transactions")
+      .get("https://book-vault-1-fel0.onrender.com")
       .then((res) => setTransactions(res.data))
       .catch((err) => console.log(err));
   }, []);

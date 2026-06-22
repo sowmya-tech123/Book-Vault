@@ -12,7 +12,7 @@ function Dashboard() {
 
 useEffect(() => {
   axios
-    .get("http://localhost:5000/dashboard")
+    .get("https://book-vault-1-fel0.onrender.com")
     .then((res) => setStats(res.data))
     .catch((err) => console.log(err));
 }, []);

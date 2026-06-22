@@ -8,7 +8,7 @@ import Dashboard from "./pages/Dashboard";
 import Books from "./pages/Books";
 import Issued from "./pages/Issued";
 import Available from "./pages/Available";
-import Transactions from "./pages/transactions";
+import Transactions from "./pages/Transactions";
 import "./App.css";
 
 function App() {
