@@ -7,7 +7,7 @@ function Transactions() {
 
   useEffect(() => {
     axios
-      .get("https://book-vault-1-fel0.onrender.com")
+      .get("https://book-vault-1-fel0.onrender.com/transactions")
       .then((res) => setTransactions(res.data))
       .catch((err) => console.log(err));
   }, []);
@@ -17,15 +17,19 @@ function Transactions() {
       <h1>Recent Transactions</h1>
 
       <div className="transactions-list">
-        {transactions.map((item) => (
-          <div className="transaction-row" key={item._id}>
-            <span>{item.text}</span>
+        {transactions.length > 0 ? (
+          transactions.map((item) => (
+            <div className="transaction-row" key={item._id}>
+              <span>{item.text}</span>
 
-            <span className="time">
-              {new Date(item.createdAt).toLocaleString()}
-            </span>
-          </div>
-        ))}
+              <span className="time">
+                {new Date(item.createdAt).toLocaleString()}
+              </span>
+            </div>
+          ))
+        ) : (
+          <p>No transactions found</p>
+        )}
       </div>
     </main>
   );

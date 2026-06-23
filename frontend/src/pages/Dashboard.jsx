@@ -3,19 +3,21 @@ import TopCategories from "../components/TopCategories";
 import "../styles/Dashboard.css";
 import { useEffect, useState } from "react";
 import axios from "axios";
+
 function Dashboard() {
   const [stats, setStats] = useState({
-  totalBooks: 0,
-  availableBooks: 0,
-  issuedBooks: 0,
-});
+    totalBooks: 0,
+    availableBooks: 0,
+    issuedBooks: 0,
+  });
 
-useEffect(() => {
-  axios
-    .get("https://book-vault-1-fel0.onrender.com")
-    .then((res) => setStats(res.data))
-    .catch((err) => console.log(err));
-}, []);
+  useEffect(() => {
+    axios
+      .get("https://book-vault-1-fel0.onrender.com/dashboard")
+      .then((res) => setStats(res.data))
+      .catch((err) => console.log(err));
+  }, []);
+
   return (
     <main>
       <h1>Welcome back, Sowmya 👋</h1>
